@@ -1,0 +1,111 @@
+/* ================= NAVBAR ================= */
+
+.navbar-modern {
+    width: 100%;
+    background: #061326;
+    padding: 12px 40px;
+    position: relative;
+    z-index: 1000;
+}
+
+.navbar-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO */
+.brand-school {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    text-decoration: none;
+    color: white;
+}
+
+.brand-school img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.brand-school strong {
+    display: block;
+    font-size: 17px;
+}
+
+.brand-school small {
+    display: block;
+    font-size: 10px;
+    color: #b8c5d6;
+    margin-top: 3px;
+}
+
+/* MENU */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-menu a {
+    display: inline-block;
+
+    color: white;
+    text-decoration: none;
+
+    padding: 10px 14px;
+    border-radius: 8px;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+    background: #1479ff;
+    color: white;
+}
+
+/* MENU AKTIF */
+.nav-menu a.active {
+    background: #1479ff;
+    color: white;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1000px) {
+
+    .navbar-modern {
+        padding: 12px 20px;
+    }
+
+    .navbar-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .nav-menu {
+        gap: 3px;
+    }
+
+    .nav-menu a {
+        padding: 8px 9px;
+        font-size: 12px;
+    }
+}
